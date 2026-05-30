@@ -13,7 +13,7 @@ By default, Wwise audio is not rendered when using MRQ to render level sequences
 
 # Usage
 1. Starup MRQ and edit the config
-![MRQ Config](docs/wwisemrq-edit-mrq-config.png)
+![MRQ Config](./docs/wwisemrq-edit-mrq-config.png)
 1. Add the Wwise Movie Render output node
 ![Add Wwise Movie Render node](docs/wwisemrq-select-output-node.png)
 1. Configure the Wwise Movie Render node to override the output filename if desired. By default it will use the naming convention for the first video frame.
