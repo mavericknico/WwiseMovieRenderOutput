@@ -18,7 +18,7 @@ Wwise audio isn't rendered when Movie Render Queue renders a level sequence. Thi
 
 ## Usage
 
-**1. Open MRQ and edit the render config.**
+**1. Open MRQ and edit the render config. Make sure Deferred Rendering is present under Rendering or add if necessary.**
 
 ![Editing the Movie Render Queue config](Docs/wwisemrq-edit-mrq-config.png)
 
