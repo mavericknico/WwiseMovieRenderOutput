@@ -137,12 +137,9 @@ void UWwiseMoviePipelineWaveOutput::OnReceiveImageDataImpl(FMoviePipelineMergerO
 	IWwiseSoundEngineAPI* const SoundEngine = IWwiseSoundEngineAPI::Get();
 	if (SoundEngine && SoundEngine->IsInitialized())
 	{
-		// specify frame time for this frame ...
+		// render audio for this frame's time
 		const float DeltaTime = InMergedOutputFrame->FrameOutputState.TimeData.FrameDeltaTime;
 		SoundEngine->SetOfflineRenderingFrameTime(DeltaTime);
-
-		// ... and tell wwise to render the frame
-		SoundEngine->RenderAudio();
 	}
 }
 
